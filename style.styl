@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+// Primary
+$red = hsl(0, 78%, 62%)
+$cyan = hsl(180, 62%, 55%)
+$orange = hsl(34, 97%, 64%)
+$blue = hsl(212, 86%, 64%)
+
+
+// Neutral
+$very-dark-blue = hsl(234, 12%, 34%)
+$grayish-blue = hsl(229, 6%, 66%)
+$very-light-gray = hsl(0, 0%, 98%)
+
+*
+  margin 0
+  padding 0
+  font-family 'Poppins', sans-serif
+
+
+body
+  display flex
+  min-height 100vh
+  justify-content center
+  align-items center
+  background-color $very-light-gray
+
+.container
+  display flex
+  justify-content center
+  align-items center
+  flex-direction column
+  width 311px
+  margin 3rem 2rem
+  @media (min-width: 650px)
+    width 645px
+  @media (min-width: 1000px)
+    width auto
+
+header
+  display flex
+  flex-direction column
+  text-align center
+  @media (min-width: 650px)
+    width 75%
+  @media (min-width: 1000px)
+    width 50%
+
+  h1
+    font-size 24px
+    font-weight 200
+    color $very-dark-blue
+    @media (min-width: 1000px)
+      font-size 36px
+
+  h2
+    font-size 24px
+    font-weight 600
+    margin-top .5rem
+    color $very-dark-blue
+    @media (min-width: 1000px)
+      font-size 36px
+      margin-top 0
+
+  p
+    font-size 15px
+    font-weight 400
+    margin-top 1rem
+    color $grayish-blue
+    @media (min-width: 1000px)
+      font-size 16px
+
+main
+  display flex
+  flex-direction column
+  margin-top 2rem
+  @media (min-width: 650px)
+    align-items center
+  @media (min-width: 1000px)
+    flex-direction row
+
+  .middle-container
+    display @display
+    flex-direction @flex-direction
+    margin 0
+    @media (min-width: 650px)
+      flex-direction row
+      justify-content space-between
+      width 645px
+    @media (min-width: 1000px)
+      margin 0 2rem
+      flex-direction column
+      width auto
+
+
+.card
+  box-shadow 0 10px 20px 3px rgba($grayish-blue, 0.4)
+  border-radius .4rem
+  background-color white
+  width 311px
+  height 218px
+  margin-top 1.4rem
+  transition width, height 300ms
+
+  @media (min-width: 1150px)
+    width 350px
+    height 250px
+    margin-top 2rem
+
+  div
+    height 100%
+    padding 0 1.7rem
+    display flex
+    flex-direction column
+    justify-content space-between
+
+  h3
+    color $very-dark-blue
+    margin-top 1.5rem
+    @media (min-width: 1000px)
+      font-size 20px
+
+  p
+    font-size 13px
+    font-weight 400
+    color $grayish-blue
+    @media (min-width: 1000px)
+      font-size 14px
+
+  img
+    margin-top 1.5rem
+    margin-bottom 1.5rem
+    margin-left auto
+    width 64px
+
+.red
+  border-top 4px solid $red
+
+.cyan
+  border-top 4px solid $cyan
+
+.orange
+  border-top 4px solid $orange
+
+.blue
+  border-top 4px solid $blue

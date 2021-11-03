@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 311px;
+  margin: 3rem 2rem;
+}
+@media (min-width: 650px) {
+  .container {
+    width: 645px;
+  }
+}
+@media (min-width: 1000px) {
+  .container {
+    width: auto;
+  }
+}
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+@media (min-width: 650px) {
+  header {
+    width: 75%;
+  }
+}
+@media (min-width: 1000px) {
+  header {
+    width: 50%;
+  }
+}
+header h1 {
+  font-size: 24px;
+  font-weight: 200;
+  color: #4c4e61;
+}
+@media (min-width: 1000px) {
+  header h1 {
+    font-size: 36px;
+  }
+}
+header h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  color: #4c4e61;
+}
+@media (min-width: 1000px) {
+  header h2 {
+    font-size: 36px;
+    margin-top: 0;
+  }
+}
+header p {
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 1rem;
+  color: #a3a5ae;
+}
+@media (min-width: 1000px) {
+  header p {
+    font-size: 16px;
+  }
+}
+main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+@media (min-width: 650px) {
+  main {
+    align-items: center;
+  }
+}
+@media (min-width: 1000px) {
+  main {
+    flex-direction: row;
+  }
+}
+main .middle-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+@media (min-width: 650px) {
+  main .middle-container {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 645px;
+  }
+}
+@media (min-width: 1000px) {
+  main .middle-container {
+    margin: 0 2rem;
+    flex-direction: column;
+    width: auto;
+  }
+}
+.card {
+  box-shadow: 0 10px 20px 3px rgba(163,165,174,0.4);
+  border-radius: 0.4rem;
+  background-color: #fff;
+  width: 311px;
+  height: 218px;
+  margin-top: 1.4rem;
+  transition: width, height 300ms;
+}
+@media (min-width: 1150px) {
+  .card {
+    width: 350px;
+    height: 250px;
+    margin-top: 2rem;
+  }
+}
+.card div {
+  height: 100%;
+  padding: 0 1.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card h3 {
+  color: #4c4e61;
+  margin-top: 1.5rem;
+}
+@media (min-width: 1000px) {
+  .card h3 {
+    font-size: 20px;
+  }
+}
+.card p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #a3a5ae;
+}
+@media (min-width: 1000px) {
+  .card p {
+    font-size: 14px;
+  }
+}
+.card img {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: auto;
+  width: 64px;
+}
+.red {
+  border-top: 4px solid #ea5353;
+}
+.cyan {
+  border-top: 4px solid #45d3d3;
+}
+.orange {
+  border-top: 4px solid #fcaf4a;
+}
+.blue {
+  border-top: 4px solid #549ef2;
+}
